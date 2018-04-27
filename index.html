@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Vue.js Tutorial</title>
+        <link href="styles.css" rel="stylesheet">
+        <!-- development version, includes helpful console warnings -->
+        <script src="https://unpkg.com/vue"></script>
+
+
+    </head>
+    <body>
+        <div id="vue-app">
+            <h1>Dynamic CSS</h1>
+            <h2>Example 1</h2>
+           <!--  <div v-on:click="available = !available" v-bind:class="{available: available}">
+                <span>Ryu</span>
+            </div> -->
+            <h2>Example 2</h2>
+            <button v-on:click="nearby = !nearby">Toggle nearby</button>
+            <button v-on:click="available = !available">Toggle available</button>
+            <div v-bind:class="compClasses">
+                <span>Ryu</span>
+            </div>
+        </div>           
+
+        <script src="app.js"></script>
+    </body>
+</html>
+
+  <!-- <h1>Events</h1>
+            <button v-on:click.once="add(1)">Add a Year</button>
+            <button v-on:click="subtract(1)">Subtract a Year</button>
+            <button v-on:dblclick="add(10)">Add 10 Years</button>
+            <button v-on:dblclick="subtract(10)">Subtract 10 Years</button>
+            <p>My age is {{ age }}</p>
+            <div id="canvas" v-on:mousemove="updateXY">{{ x }}, {{ y }}</div>
+            <a v-on:click.prevent="click" href="http://www.calvinbrownlee.com">Portfolio</a> -->
+            <!-- <a v-bind:href="website">Brown's Portfolio</a>
+            <input type="text" v-bind:value="name"/>
+            <p v-html="websiteTag"></p>
+            <h1>{{ greet('morning') }}</h1>
+            <p>Name: {{ name }}</p>
+            <p>Job: {{ job }}</p> -->
+            <!--            <h1>Keyboard Events</h1>
+            <label>Name:</label>
+            <input type="text" v-model="name"/>
+            <span>{{ name }}</span>
+            <label>Age:</label>
+            <input type="text" v-model="age"/>
+            <span>{{ age }}</span>
+           -->
+           <!--             <h1>Computed Properties</h1>
+            <button v-on:click="a++">Add to A</button>
+            <button v-on:click="b++">Add to B</button>
+            <p>A - {{ a }}</p>
+            <p>B - {{ b }}</p>
+            <p>Age + A = {{ addToA }}</p>
+            <p>Age + B = {{ addToB }}</p> -->
