@@ -1,19 +1,18 @@
 new Vue({
     el: '#vue-app',
     data: {
-        available: false,
-        nearby: false
+        characters: ['Mario', 'Luigi', 'Yoshi', 'Bowser'],
+        ninjas: [
+            {name: 'Ryu', age:25},
+            {name:'Yoshi', age:35},
+            {name:'Ken', age: 55}
+        ]
     },
     methods: {
    
     },
     computed: {
-        compClasses: function(){
-            return {
-                available: this.available,
-                nearby: this.nearby,
-            }
-        }
+       
     }
 });
         // age: 32,
@@ -49,3 +48,15 @@ new Vue({
         // addToB: function(){
         //     return this.b + this.age;
         // }       
+// available: false,
+        // nearby: false
+
+        //  compClasses: function(){
+        //     return {
+        //         available: this.available,
+        //         nearby: this.nearby,
+        //     }
+        // }
+
+                // error: false,
+        // success: false  
